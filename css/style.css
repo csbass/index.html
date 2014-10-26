@@ -38,9 +38,20 @@ ol, ul {
 
 /*Start Custom Styles */
 
+body {
+    /*background-color: LightGray;*/
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+div {
+    /*border: 1px solid Chocolate;*/
+}
+
+
 .content {
-	box-sizing: border-box;
-	padding: 0 15px;
+	padding: 0 0.938rem;
+    margin: 0 auto;
 }
 
 .top-navigation > .content {
@@ -51,11 +62,18 @@ ol, ul {
 
 /*  Navigation Section */
 .top-navigation {
-	background-color: #fff;			
+	background-color: #fff;	
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;		
+}
+
+.top-navigation > .content {
+    height: 4.375rem;
 }
 
 
-.top-navigation > .logo {
+.top-navigation .logo {
 	height: 70px
 }
 
@@ -66,7 +84,7 @@ ol, ul {
     color: #838994;
     font-size: 16px;
     margin-top: 25px;
-    -webkit-font-smoothing: antialiased;
+   
 }
 .top-navigation .links li {
     display: inline-block;
@@ -84,25 +102,115 @@ ol, ul {
 /*Introduction Section*/
 
 .introduction {
-    background-image: url('http://i61.tinypic.com/30c2cep.jpg');
+    background-image: url('../img/first-background.jpg');
     background-position: center bottom;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 45.938rem;
+    overflow: auto;
+}
+
+.introduction h1,
+.introduction h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
 }
 
 
-.content > h1{
-    background-color: #fff;
-
+.introduction h1 {
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
 }
 
-/*Body Section*/
 
-.body {
-    background-color: #fff;
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+.introduction h3 {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
 }
+
+/*The Buttons*/
+
+.introduction .buttons {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+
+.introduction .half {
+    width: 49%;
+    padding: 0 0.938rem;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 1.125rem;
+    line-height: 1.2;
+}
+
+.half .learn {
+    text-align: right;
+}
+
+.half .watch {
+    text-align: left;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+}
+
+.introduction .learn button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+:focus {
+    outline: none;
+}
+.introduction .learn button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+.introduction .watch img {
+    position: relative;
+    top: 0.625rem;
+}
+
+.bouncing-arrow {
+    position: absolute;
+    height: 5.625rem;
+    bottom: 0;
+    width: 3.25rem;
+    left: 50%;
+    z-index: 1000;
+    margin-left: -1.625rem;
+}
+
+div {
+    /*border: 1px solid Chocolate;*/
+}
+
+a:-webkit-any-link {
+color: -webkit-link;
+text-decoration: underline;
+cursor: auto;
+}
+
+.element-to-animate {
+  animation: bouncing-arrow 5s infinite;
+}
+
+@keyframes bouncing-arrow {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
 
 
 
