@@ -259,7 +259,7 @@ div {
 /*Buy Now Section*/
 
 .buy-now {
-    background-image: url('..img/buy-now-bg.jpg');
+    background-image: url('../img/buy-now-bg.jpg');
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
